@@ -1,5 +1,7 @@
 # Ocean at Night - Arch Sway Setup
 
+> **Note**: This is my personal Arch Linux setup. It works for me, but your mileage may vary. Use at your own risk and feel free to customize it to your needs!
+
 A beautiful, minimalist Arch Linux setup featuring SwayFX with the "Ocean at Night" color theme. This repository contains all configuration files and an automated installation script to recreate this setup on a fresh Arch installation.
 
 ![Theme: Ocean at Night](https://img.shields.io/badge/Theme-Ocean%20at%20Night-1e3a5f?style=for-the-badge)
