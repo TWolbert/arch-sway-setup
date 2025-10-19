@@ -1,0 +1,60 @@
+# Swaylock-effects configuration matching waybar Ocean at Night theme
+
+# Blur the desktop
+effect-blur=7x5
+
+# Remove default image/color
+color=00000000
+
+# Ring (circle in the middle)
+ring-color=0a1628cc
+ring-clear-color=89dceb
+ring-ver-color=89dceb
+ring-wrong-color=e74c3c
+
+# Inside of the ring (keep it minimal)
+inside-color=0a162899
+inside-clear-color=0a1628bb
+inside-ver-color=0a1628bb
+inside-wrong-color=0a1628bb
+
+# Key press indicator color
+key-hl-color=ffffff
+
+# Backspace indicator color
+bs-hl-color=e74c3c
+
+# Text colors
+text-color=ffffff
+text-clear-color=ffffff
+text-ver-color=ffffff
+text-wrong-color=ffffff
+
+# Separator color (line between ring and text)
+separator-color=00000000
+
+# Ring geometry - smaller and simpler
+indicator-radius=80
+
+# Remove text inside the ring for minimalism
+indicator-thickness=7
+
+# Fade in effect
+fade-in=0.2
+
+# Grace period before locking (0 = immediate)
+grace=0
+
+# Show/hide options
+show-failed-attempts
+show-keyboard-layout
+
+# Font
+font=JetBrainsMono Nerd Font
+font-size=14
+
+# Disable caps lock text
+indicator-caps-lock
+
+# Line uses ring style
+line-uses-ring

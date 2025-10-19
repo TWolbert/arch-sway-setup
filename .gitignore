@@ -1,0 +1,22 @@
+# Backup files
+*.backup
+*.bak
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Personal files
+wallpapers/*
+!wallpapers/.gitkeep
+!wallpapers/ocean-night-default.jpg
+
+# SSH Keys (NEVER commit private keys!)
+ssh-keys/id_*
+ssh-keys/*.pem
+ssh-keys/*.key
+!ssh-keys/README.md
+
+# Logs
+*.log

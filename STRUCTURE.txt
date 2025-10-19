@@ -1,0 +1,48 @@
+arch-sway-setup/
+├── install.sh                      # Main installation script (executable)
+├── README.md                       # Comprehensive documentation
+├── QUICK_START.md                  # Quick installation guide
+├── packages.txt                    # List of all packages to install
+├── .gitignore                      # Git ignore rules
+├── STRUCTURE.txt                   # This file - repository structure
+│
+├── configs/                        # Configuration files
+│   ├── sway/
+│   │   └── config                  # SwayFX configuration (Ocean at Night theme)
+│   ├── waybar/
+│   │   ├── config                  # Waybar modules configuration
+│   │   └── style.css               # Waybar styling (two-island layout)
+│   ├── foot/
+│   │   └── foot.ini                # Foot terminal config (transparent)
+│   ├── alacritty/
+│   │   └── alacritty.toml          # Alacritty terminal config (alternative)
+│   ├── fuzzel/
+│   │   └── fuzzel.ini              # Fuzzel launcher config
+│   ├── swaylock/
+│   │   └── config                  # Swaylock-effects config
+│   └── zsh/
+│       └── .zshrc                  # Zsh configuration with Oh My Zsh
+│
+├── fonts/                          # Font files
+│   └── JetBrainsMono/              # JetBrains Mono Nerd Font (98 files)
+│       ├── JetBrainsMonoNerdFont-*.ttf
+│       └── ...
+│
+└── wallpapers/                     # Wallpaper images
+    ├── .gitkeep
+    └── ocean-night-default.jpg     # Default Ocean at Night wallpaper (2.3MB)
+
+Total files: 112
+Total size: ~226MB (mostly fonts)
+
+Key Features:
+- Automated installation via install.sh
+- Complete SwayFX setup with effects (blur, rounded corners)
+- Ocean at Night color theme throughout
+- All necessary fonts included
+- Wallpaper included and auto-configured
+- Bootstrap scripts for paru and rustup
+- Oh My Zsh setup
+- PipeWire audio and Bluetooth configuration
+
+Ready to push to GitHub!

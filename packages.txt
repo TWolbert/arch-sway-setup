@@ -1,0 +1,65 @@
+# Core Wayland/Sway packages
+swayfx-git          # Enhanced Sway with effects (blur, rounded corners)
+waybar              # Status bar
+swaybg              # Background/wallpaper
+swayidle            # Idle management
+swaylock-effects-git # Screen locker with effects
+swaync-git          # Notification daemon
+
+# Application launcher
+fuzzel              # Wayland application launcher
+
+# Terminal emulators
+foot                # Lightweight Wayland terminal (primary)
+
+# Screenshot utilities
+grim                # Screenshot tool
+slurp               # Region selector for screenshots
+wl-clipboard        # Wayland clipboard utilities
+
+# Audio
+pipewire            # Audio server
+pipewire-alsa       # ALSA support
+pipewire-pulse      # PulseAudio compatibility
+pipewire-jack       # JACK support
+pipewire-audio      # Audio processing
+pavucontrol         # GUI volume control
+playerctl           # Media player controls
+
+# Bluetooth
+bluez               # Bluetooth protocol stack
+bluez-utils         # Bluetooth utilities
+bluez-libs          # Bluetooth libraries
+
+# System utilities
+brightnessctl       # Screen brightness control
+polkit              # Authentication framework
+nwg-displays        # GUI display/monitor configuration tool
+
+# GTK theming
+gtk3                # GTK3 library
+gtk4                # GTK4 library
+gtk-layer-shell     # GTK layer shell for Wayland
+xdg-desktop-portal-gtk # GTK file picker
+
+# Fonts
+ttf-nerd-fonts-symbols        # Nerd Fonts symbols (required for waybar icons)
+ttf-nerd-fonts-symbols-common # Common Nerd Fonts symbols
+
+# Optional but recommended
+btop                # System monitor
+fastfetch           # System information tool
+
+# Development tools (from your setup)
+zsh                 # Z shell
+git                 # Version control
+lazygit             # Git TUI
+gh                  # GitHub CLI
+
+# Docker
+docker              # Container platform
+docker-compose      # Multi-container Docker applications
+docker-buildx       # Docker build with BuildKit
+
+# AUR Helper (needed for -git packages)
+# Install paru or yay first before running this script

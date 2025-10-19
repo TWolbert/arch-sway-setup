@@ -1,0 +1,231 @@
+/* Ocean at Night Theme for Waybar - Two Island Layout */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* Left island - workspaces and window */
+.modules-left {
+    background-color: #0a1628;
+    border-radius: 12px;
+    margin: 5px;
+    margin-right: 0;
+    padding: 2px 8px;
+}
+
+/* Center - window title (no background) */
+.modules-center {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+/* Right island - system info */
+.modules-right {
+    background-color: #0a1628;
+    border-radius: 12px;
+    margin: 5px;
+    margin-left: 0;
+    padding: 2px 8px;
+}
+
+#workspaces {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+#workspaces button {
+    padding: 4px 10px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    margin: 2px;
+    min-width: 20px;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+#mode {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+#window {
+    color: #ffffff;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#power-profiles-daemon,
+#custom-media,
+#tray,
+#idle_inhibitor,
+#mpd {
+    padding: 0 12px;
+    color: #ffffff;
+    background-color: transparent;
+    margin: 0;
+}
+
+#clock {
+    font-weight: normal;
+    padding-right: 0;
+}
+
+#battery {
+    color: #ffffff;
+}
+
+#battery.charging, #battery.plugged {
+    color: #89dceb;
+}
+
+@keyframes blink {
+    to {
+        color: #e74c3c;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: #e74c3c;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+    color: #ffffff;
+}
+
+#memory {
+    color: #ffffff;
+}
+
+#disk {
+    color: #ffffff;
+}
+
+#backlight {
+    color: #ffffff;
+}
+
+#network {
+    color: #ffffff;
+}
+
+#network.disconnected {
+    color: #e74c3c;
+}
+
+#pulseaudio {
+    color: #ffffff;
+}
+
+#pulseaudio.muted {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#power-profiles-daemon {
+    color: #ffffff;
+}
+
+#power-profiles-daemon.performance {
+    color: #e74c3c;
+}
+
+#power-profiles-daemon.power-saver {
+    color: #89dceb;
+}
+
+#temperature {
+    color: #ffffff;
+}
+
+#temperature.critical {
+    color: #e74c3c;
+}
+
+#tray {
+    color: #ffffff;
+    padding-left: 0;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    color: #e74c3c;
+}
+
+#idle_inhibitor {
+    color: #ffffff;
+}
+
+#idle_inhibitor.activated {
+    color: #89dceb;
+}
+
+#mpd {
+    color: #ffffff;
+}
+
+#mpd.disconnected {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#mpd.stopped {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#mpd.paused {
+    color: rgba(255, 255, 255, 0.7);
+}
